@@ -1,0 +1,7 @@
+<input #jobname type="text" placeholder="Job Name"><br>
+<input #jobnum type="text" placeholder="Job Number"><br>
+<input #lengthinput type="text" placeholder="Length" [value]="length" (change)="updateLength(lengthinput.value)"><br>
+<input #widthinput type="text" placeholder="Width" [value]="width" (change)="updateWidth(widthinput.value)"><br>
+<input #wasteinput type="text" placeholder="Waste %" [value]="waste" (change)="updateWaste(wasteinput.value)"><br>
+Area: {{area()}} LF <br>
+Perimiter: {{ perimiter() }} LF <br>
